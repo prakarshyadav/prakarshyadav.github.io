@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88403851-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script> 
+<script src="page.js"></script> 
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<title>Ben Eysenbach</title>
+</head>
+
+<body>
+<div id="content">  
+  <div id="title">
+    <h1>Ben Eysenbach</h1>
+    <p>
+      PhD Student at CMU &amp; Student Researcher at Google Brain<br>
+      beysenba<span style="display:none">spam</span>@cs.cmu.edu, <a href="https://twitter.com/ben_eysenbach">@ben_eysenbach</a>
+    </p>
+  </div>
+
+  <!-- links -->
+  <!--
+  <div class="container" id="links">
+  <p><hr></p>
+  <p>
+    <a href="#research">Research</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#blog">Blog</a>
+    <a href="resume.pdf">Resume</a>
+  </p>
+  <br>
+  <p><hr width=100%></p>
+  </div>
+  -->
+
+
+  <div class="container" style="margin: 0px 20px; width: 760px;">
+<img id='profile-img' style="float:right" src="images/me/whiteboard.jpg" alt="Ben Eysenbach">
+<p><b>Bio</b>: I'm a PhD student in the Machine Learning Department at Carnegie Mellon University and a student researcher in Google Brain. I am co-advised by <a href="http://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a> and <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>. My PhD is supported by the National Science Foundation (GFRP) and the Hertz Fellowship. Previously, I was a <a href="https://research.google.com/teams/brain/residency/">Resident</a> at Google Brain.  I studied math and computer science at MIT.<!-- (<a href="bio.html">formal bio</a>)--></p>
+<p><b>Research summary</b>: My research has focused on designing better RL algorithms.
+<ul>
+  <li>Data-driven control [<a href="https://arxiv.org/abs/2011.08909">1</a>, <a href="https://arxiv.org/abs/2103.12656">2</a>]</li>
+  <li>Safety and robustness [<a href="https://arxiv.org/abs/1711.06782">1</a>, <a href="https://arxiv.org/abs/2006.13916">2</a>, <a href="https://arxiv.org/abs/2103.06257">3</a>]</li>
+  <li>Unsupervised RL and skill learning [<a href="https://arxiv.org/abs/1802.06070">1</a>, <a href="https://arxiv.org/abs/1906.05274">2</a>]</li>
+  <li>Planning and inference [<a href="https://arxiv.org/abs/1906.05253">1</a>, <a href="https://arxiv.org/abs/2002.11089">2</a>]</li>
+  </li>... and demonstrating that these algorithms work on real robots [<a href="https://arxiv.org/abs/2012.15373">1</a>, <a href="https://arxiv.org/abs/2012.09812">2</a>]
+</ul>
+<p><b>Research opportunities</b>: I am usually looking for students to help with research projects both during the semester and over the summer. If you are interested, please send me an email. I especially encourage students from underrepresented groups to reach out.</p>
+ 
+    <hr>
+   </div>
+<br>
+
+  <div class="container" id="news">
+      <h2>News</h2>
+      <small>
+    <ul>
+      <li>Two recent papers were accepted to NeurIPS 2021: <a href="https://ben-eysenbach.github.io/rce">Replacing Rewards with Examples: Example-Based Policy Search via Recursive Classification</a> (oral) <a href="https://ben-eysenbach.github.io/rpc">Robust Predictable Control</a> (spotlight). I received a "Outstanding Reviewer Award" for reviewing for NeurIPS this year.
+        <li>Excited to release a few new papers!
+          <ul>
+            <li><a href="https://arxiv.org/abs/2110.02758">Mismatched No More: Joint Model-Policy Optimization for Model-Based RL</a> (with Sasha Khazatsky): We propose a single objective for jointly training a model and policy for model-based RL, such that updates to either component improves a lower bound on expected return.</li>
+            <li><a href="https://arxiv.org/abs/2110.02719">The Information Geometry of Unsupervised Reinforcement Learning</a>: We prove that unsupervised skill learning algorithms, such as DIAYN, are not optimal for learning all reward-maximizing policies. I think this work is interesting because it suggests that other, yet-uninvented, skill learning algorithms may be much better for preparing to solve new tasks.</li>
+            <li><a href="https://sites.google.com/view/pomdp-baselines">Recurrent Model-Free RL is a Strong Baseline for Many POMDPs</a> (with <a href="https://twni2016.github.io/">Tianwei Ni</a>): Simply using recurrent architecture allows standard model-free RL algorithms to perform very well on meta-RL, robust RL, and other sorts of POMDPs. We discover a few key tricks that make this possible, and release code so that future work can include this very strong baseline.</li>
+          </ul>
+    </ul>
+      </small>
+    <table id="news-table" style="padding: 0px 20px"></table>
+    <hr>
+  </div>
+
+
+  <div class="container" id="research">
+    <h2>Selected Publications</h2>
+		<p style="margin: 0px 20px">See <a href="https://scholar.google.com/citations?user=DRnOvU8AAAAJ">Google Scholar</a> for a complete and up-to-date list of publications.</p>
+    <table id="research-table"></table>
+		<p style="margin: 0px 20px">*Equal contribution.</p>
+    <hr>
+  </div>
+
+  <div class="container" id="teaching">
+    <h2>Teaching</h2>
+    <table id="teaching-table"></table>
+    <hr>
+  </div>
+ 
+ 
+  <div class="container" id="blog">
+    <h2>Assorted Blog Posts</h2>
+    <table id="blog-table"></table>
+    <hr>
+  </div>
+
+  <div class="container">
+    <p id="copyright">© 2021 Ben Eysenbach</p>
+  </div>
+
+
+<!-- spacer to expand content div -->
+<div class="spacer" style="clear: both;"></div>
+</div> <!-- end container div -->
+
+</body>
+</html>
+
